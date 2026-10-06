@@ -2,3 +2,4 @@
 .path-debug { display:block; color:#999; font-size:20rpx; word-break:break-all; margin:12rpx 0; }
 .debug-panel { margin:16rpx 0; padding:12rpx; color:#888; background:#f1efeb; font-size:18rpx; }.debug-line { display:block; word-break:break-all; line-height:1.4; }
 @media (max-width:599px) { .exam-layout { gap:12rpx; }.nav { display:flex; flex-wrap:nowrap; gap:10rpx; overflow-x:auto; white-space:nowrap; padding:4rpx 4rpx 12rpx; }.num { flex:0 0 52rpx; min-width:52rpx; width:52rpx; height:52rpx; border-radius:50%; font-size:22rpx; }.num.done { border-width:3rpx; }.question { width:100%; }.prompt { margin:16rpx 0 24rpx; font-size:32rpx; } }
+.parts { margin-top:20rpx; }.part-title { display:block; font-size:34rpx; font-weight:700; margin:28rpx 0 16rpx; }.material { max-height:520rpx; padding:24rpx; box-sizing:border-box; background:#fffdf8; border:1rpx solid #e7dfd2; border-radius:12rpx; white-space:pre-wrap; line-height:1.6; }.part .question { margin-top:28rpx; }
