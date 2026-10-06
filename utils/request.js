@@ -6,7 +6,12 @@ function request({ url, method = 'GET', data, header = {}, ...options }) {
   return new Promise((resolve, reject) => wx.request({ url: BASE_URL + url, method, data, header: headers, ...options,
     success(res) {
       if (res.statusCode === 401) { const app = getApp(); app && app.login && app.login().catch(() => {}); }
-      if (res.statusCode >= 200 && res.statusCode < 300) resolve(res.data); else reject(new Error(`HTTP ${res.statusCode}`));
+      if (res.statusCode >= 200 && res.statusCode < 300) resolve(res.data); else {
+        const detail = res.data && res.data.error;
+        const message = detail && detail.message ? detail.message : `HTTP ${res.statusCode}`;
+        console.error('[request]', res.statusCode, res.data);
+        const error = new Error(message); error.statusCode = res.statusCode; error.body = res.data; reject(error);
+      }
     }, fail: reject }));
 }
 module.exports = { BASE_URL, request };
