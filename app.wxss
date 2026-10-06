@@ -1,0 +1,5 @@
+page { background: #f7f3ec; color: #1f2933; font-size: 15px; }
+:root { --content-width: 900px; --gap: 24rpx; }
+.container { width: min(100% - 48rpx, var(--content-width)); margin: 0 auto; }
+@media (min-width: 600px) { :root { --gap: 32rpx; } .container { width: min(100% - 80rpx, var(--content-width)); } }
+@media (min-width: 1000px) { .container { width: 900px; } }

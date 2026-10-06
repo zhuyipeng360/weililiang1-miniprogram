@@ -1,0 +1,1 @@
+<view class="container placeholder"><text class="eyebrow">{{exam}}</text><text class="heading">题库列表</text><text>题库列表将在下一个任务接入 API。</text></view>

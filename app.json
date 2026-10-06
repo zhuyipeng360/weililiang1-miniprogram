@@ -1,0 +1,6 @@
+{
+  "pages": ["pages/index/index", "pages/bank-list/bank-list"],
+  "window": { "navigationBarTitleText": "剑桥英语题库", "navigationBarBackgroundColor": "#f7f3ec", "navigationBarTextStyle": "black", "backgroundColor": "#f7f3ec" },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
