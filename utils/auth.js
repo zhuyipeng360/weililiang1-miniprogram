@@ -3,7 +3,7 @@ let pending;
 function login(profile) {
   if (pending) return pending;
   pending = new Promise((resolve, reject) => wx.login({
-    success: ({ code }) => request({ url: '/api/v1/auth/wechat/miniprogram', method: 'POST', data: { code, userInfo: profile || null } })
+    success: ({ code }) => request({ url: '/api/v1/auth/wechat/miniprogram', method: 'POST', data: { code } })
       .then(body => {
         const data = body.data || body;
         const token = data.token || data.session || data.session_token;
