@@ -4,5 +4,4 @@
   <view class="hero"><text class="eyebrow">CAMBRIDGE ENGLISH</text><text class="heading">选择考试，开始练习</text><text class="subheading">按需加载题库，不把题目打包进小程序。</text></view>
   <view class="exam-grid"><block wx:for="{{['KET','PET','FCE','CAE']}}" wx:key="*this"><button class="exam-card" data-exam="{{item}}" bindtap="chooseExam"><text>{{item}}</text><text class="arrow">→</text></button></block></view>
   <text class="status">{{loginMessage}}</text>
-  <view class="debug-panel" wx:if="{{debugLogs.length}}"><text class="debug-title">登录调试信息</text><block wx:for="{{debugLogs}}" wx:key="index"><text class="debug-line">{{item}}</text></block></view>
 </view>
