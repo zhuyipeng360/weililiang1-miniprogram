@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/bank-list/bank-list",
     "pages/exam/exam",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/history/history"
   ],
   "window": {
     "navigationBarTitleText": "剑桥英语题库",
