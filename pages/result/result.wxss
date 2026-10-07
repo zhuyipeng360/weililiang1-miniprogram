@@ -1,0 +1,1 @@
+.result-row{padding:24rpx;margin:12rpx 0;border-radius:12rpx}.correct{background:#e8f7ed;color:#167c3a}.wrong{background:#fdeaea;color:#b42318}.score{display:block;font-size:36rpx;margin:24rpx 0}
