@@ -7,7 +7,7 @@
     "pages/history/history"
   ],
   "window": {
-    "navigationBarTitleText": "剑桥英语题库",
+    "navigationBarTitleText": "刷题大本营",
     "navigationBarBackgroundColor": "#f7f3ec",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#f7f3ec"
