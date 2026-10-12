@@ -6,7 +6,7 @@ function request({ url, method = 'GET', data, header = {}, ...options }) {
   const body = method === 'GET' || method === 'HEAD' || data === undefined ? data : JSON.stringify(data);
   return new Promise((resolve, reject) => wx.request({ url: BASE_URL + url, method, data: body, header: headers, ...options,
     success(res) {
-      if (res.statusCode === 401) { const app = getApp(); app && app.login && app.login().catch(() => {}); }
+      if (res.statusCode === 401) { wx.removeStorageSync('session'); wx.showToast({title:'登录已过期，请重新登录',icon:'none'}); const app = getApp(); app && app.login && app.login().catch(() => {}); }
       if (res.statusCode >= 200 && res.statusCode < 300) resolve(res.data); else {
         const detail = res.data && res.data.error;
         const message = detail && detail.message ? detail.message : `HTTP ${res.statusCode}`;
